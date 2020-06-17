@@ -131,6 +131,26 @@ func ValidateClient(container clientFacade, opts ...Option) error {
 	return nil
 }
 
+//  NewServiceDiscoveryClient
+func NewServiceDiscoveryClient(opts ...Option) *Client {
+	options := &Options{
+		heartbeat: 1, // default heartbeat
+	}
+
+	for _, opt := range opts {
+		opt(options)
+	}
+
+	newClient, err := newClient(options.name, options.endpoints, options.timeout, options.heartbeat)
+	if err != nil {
+		logger.Warnf("new etcd client (name{%s}, etcd addresses{%v}, timeout{%d}) = error{%v}",
+			options.name, options.endpoints, options.timeout, err)
+		return nil
+	}
+
+	return newClient
+}
+
 // Client ...
 type Client struct {
 	lock sync.RWMutex

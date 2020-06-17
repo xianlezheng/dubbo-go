@@ -29,6 +29,7 @@ require (
 	github.com/grpc-ecosystem/grpc-opentracing v0.0.0-20180507213350-8e809c8a8645
 	github.com/hashicorp/consul v1.5.3
 	github.com/hashicorp/consul/api v1.1.0
+	github.com/hashicorp/vault v0.10.3
 	github.com/jehiah/go-strftime v0.0.0-20171201141054-1d33003b3869 // indirect
 	github.com/jinzhu/copier v0.0.0-20190625015134-976e0346caa8
 	github.com/jonboulle/clockwork v0.1.0 // indirect
@@ -53,7 +54,6 @@ require (
 	github.com/toolkits/concurrent v0.0.0-20150624120057-a4371d70e3e3 // indirect
 	github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2 // indirect
 	github.com/zouyx/agollo v0.0.0-20191114083447-dde9fc9f35b8
-	go.etcd.io/bbolt v1.3.4 // indirect
 	go.uber.org/atomic v1.4.0
 	go.uber.org/zap v1.10.0
 	google.golang.org/grpc v1.22.1
