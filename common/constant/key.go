@@ -85,6 +85,7 @@ const (
 	RETRY_PERIOD_KEY                       = "retry.period"
 	RETRY_TIMES_KEY                        = "retry.times"
 	CYCLE_REPORT_KEY                       = "cycle.report"
+	SERIALIZATION_KEY                      = "serialization"
 )
 
 const (
